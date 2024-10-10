@@ -1,8 +1,8 @@
 # HyperCARS Datasets for Context-Aware Recommender Systems Research
 
 This repository provides datasets that were used in the following paper:
-"_HyperCARS: Using Hyperbolic Embeddings for Generating Hierarchical Contextual Situations in Context-Aware Recommender Systems_" 
-published in the Information Systems Research journal: https://doi.org/10.1287/isre.2022.0202
+"_HyperCARS: Using Hyperbolic Embeddings for Generating Hierarchical Contextual Situations in Context-Aware Recommender Systems_"
+published in the Information Systems Research journal [1]: https://doi.org/10.1287/isre.2022.0202
 
 
 ### Gowalla Check-in Data
@@ -21,4 +21,44 @@ Format:
 
 
 ### Yelp Review Data
+
+**Yelp** dataset (https://www.yelp.com/dataset) contains ratings and reviews of businesses, such as restaurants, hotels, shopping, etc., provided by Yelp users describing their experiences. 
+
+For this study, we used 1,100,276 reviews for the restaurants in Pennsylvania state of the US. We selected this region and category of businesses because they contain the largest number of reviews in the latest version of the Yelp dataset.
+
+To extract contextual variables from user reviews, we utilized Context Parser developed by [2]. This method produced twelve contextual variables including 
+"_company of the visit_," "_occasion_," "_time of the day_," "_type of the meal_," "_day of the week_," "_came by car_," "_applied discount_," "_prior visits_," "_came by recommendation_," "_made reservation_," "_takeout_," and "_if the user is traveling_." 
+
+The provided dataset includes 605,092 reviews that, according to Context Parser, contain values of at least one of the contextual variables. 
+
+
+[1] Bauman, K., Tuzhilin, A., & Unger, M. (2024). HyperCARS: Using Hyperbolic Embeddings for Generating Hierarchical Contextual Situations in Context-Aware Recommender Systems. Information Systems Research. https://doi.org/10.1287/isre.2022.0202
+
+[2] Bauman, K., & Tuzhilin, A. (2022). Know thy context: parsing contextual information from user reviews for recommendation purposes. Information Systems Research, 33(1), 179-202. https://doi.org/10.1287/isre.2021.1036
+
+
+## Papers
+
+If you are using these datasets in your research, please cite our papers: 
+
+@article{bauman2024hypercars,
+  title={HyperCARS: Using Hyperbolic Embeddings for Generating Hierarchical Contextual Situations in Context-Aware Recommender Systems},
+  author={Bauman, Konstantin and Tuzhilin, Alexander and Unger, Moshe},
+  journal={Information Systems Research},
+  year={2024},
+  publisher={INFORMS}
+}
+
+
+@article{bauman2022know,
+  title={Know thy context: parsing contextual information from user reviews for recommendation purposes},
+  author={Bauman, Konstantin and Tuzhilin, Alexander},
+  journal={Information Systems Research},
+  volume={33},
+  number={1},
+  pages={179--202},
+  year={2022},
+  publisher={INFORMS}
+}
+
 
