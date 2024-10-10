@@ -17,8 +17,6 @@ In particular, for each check-in, we analyzed other check-ins made by the same u
 To avoid the cold-start problem, we select only the active users who have checked-in to at least 3 different locations. Repeated check-ins from the same user in the same location and at the same time have been removed. 
 As a result, Gowalla-NYC contains 497,180 check-ins, whereas Gowalla-SF contains 514,347 check-ins. 
 
-Format:
-
 
 ### Yelp Review Data
 
@@ -41,6 +39,7 @@ The provided dataset includes 605,092 reviews that, according to Context Parser,
 
 If you are using these datasets in your research, please cite our papers: 
 
+```
 @article{bauman2024hypercars,
   title={HyperCARS: Using Hyperbolic Embeddings for Generating Hierarchical Contextual Situations in Context-Aware Recommender Systems},
   author={Bauman, Konstantin and Tuzhilin, Alexander and Unger, Moshe},
@@ -48,8 +47,9 @@ If you are using these datasets in your research, please cite our papers:
   year={2024},
   publisher={INFORMS}
 }
+```
 
-
+```
 @article{bauman2022know,
   title={Know thy context: parsing contextual information from user reviews for recommendation purposes},
   author={Bauman, Konstantin and Tuzhilin, Alexander},
@@ -60,5 +60,5 @@ If you are using these datasets in your research, please cite our papers:
   year={2022},
   publisher={INFORMS}
 }
-
+```
 
